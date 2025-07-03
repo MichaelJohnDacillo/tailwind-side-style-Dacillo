@@ -8,8 +8,8 @@
     @apply font-truculenta overflow-x-hidden;
   }
 
-  section {
-    @apply h-[47rem];
+  section{
+    @apply py-16;
   }
 
   .container {

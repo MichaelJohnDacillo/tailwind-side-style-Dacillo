@@ -562,7 +562,8 @@ body{
 }
 
 section{
-  height: 47rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .container{
@@ -903,6 +904,18 @@ footer{
 
 .font-thin{
   font-weight: 100;
+}
+
+.leading-none{
+  line-height: 1;
+}
+
+.leading-tight{
+  line-height: 1.25;
+}
+
+.leading-10{
+  line-height: 2.5rem;
 }
 
 .text-primary{
