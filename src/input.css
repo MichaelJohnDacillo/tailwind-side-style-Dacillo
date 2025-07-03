@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-truculenta overflow-x-hidden;
+  }
+
+  section {
+    @apply h-[47rem];
+  }
+
+  .container {
+    @apply max-w-7xl w-full px-4 mx-auto;
+  }
+}
+@layer components {
+  .header {
+    @apply shadow-md py-2 bg-semilight fixed w-full z-50;
+  }
+  .header__wrapper {
+    @apply flex items-center justify-between;
+  }
+  .header__wrapper ul {
+    @apply flex gap-5 text-2xl font-bold;
+  }
+
+  .about__discription{
+    @apply mt-6;
+  }
+
+  .about__discription p{
+    @apply text-xl text-white mb-4 text-justify;
+  }
+
+  .about h3::before{
+    @apply content-[""] bg-primary w-[1130px] h-[0.15rem] inline-block mx-2 mb-2;
+  }
+
+  .catalog h3::after{
+    @apply content-[""] bg-primary w-[1130px] h-[0.15rem] inline-block mx-2 mb-2;
+  }
+
+  .catalog__card{
+    @apply shadow-2xl rounded-md;
+  }
+  .catalog__card__details{
+    @apply mx-3 mt-4;
+  }
+
+  .catalog__card__details h4{
+    @apply text-secondary text-3xl font-bold;
+  }
+  .catalog__card__details a{
+    @apply text-primary;
+  }
+  .catalog__card__details p{
+    @apply my-4;
+  }
+  .catalog__card__details p, a{
+    @apply text-lg;
+  }
+
+  footer {
+    @apply bg-black/80 py-6 text-semilight;
+  }
+  .footer__contact {
+    @apply flex flex-wrap justify-between;
+  }
+  .footer__social-list ul {
+    @apply flex flex-wrap gap-3;
+  }
+
+  .btn--semilight {
+    @apply text-lg font-bold inline-block px-5 py-2 bg-semilight w-fit rounded-full shadow-lg mt-5 transition duration-150 ease-in-out hover:text-white hover:bg-primary hover:border-primary;
+  }
+}
