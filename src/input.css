@@ -169,6 +169,11 @@
   }
 
 
+  .about__details p{
+    @apply text-justify my-4;
+  }
+
+
 
 
 

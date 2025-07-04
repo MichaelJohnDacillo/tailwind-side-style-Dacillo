@@ -874,6 +874,12 @@ footer{
   max-width: 15rem;
 }
 
+.about__details p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
 /* .header {
     @apply shadow-md py-2 bg-semilight fixed w-full z-50;
   }
@@ -959,6 +965,11 @@ footer{
   margin-bottom: 1.75rem;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -1039,6 +1050,10 @@ footer{
   flex-wrap: wrap;
 }
 
+.items-center{
+  align-items: center;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -1049,6 +1064,10 @@ footer{
 
 .gap-16{
   gap: 4rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-5{
@@ -1079,19 +1098,9 @@ footer{
   padding-bottom: 2.5rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .pb-3{
@@ -1102,6 +1111,10 @@ footer{
   padding-top: 8rem;
 }
 
+.pt-40{
+  padding-top: 10rem;
+}
+
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -1110,24 +1123,12 @@ footer{
   padding-top: 6.5rem;
 }
 
-.pt-44{
-  padding-top: 11rem;
-}
-
-.pt-28{
-  padding-top: 7rem;
-}
-
-.pt-3{
-  padding-top: 0.75rem;
-}
-
-.pt-40{
-  padding-top: 10rem;
-}
-
 .text-center{
   text-align: center;
+}
+
+.text-end{
+  text-align: end;
 }
 
 .text-2xl{
@@ -1150,6 +1151,11 @@ footer{
   line-height: 1;
 }
 
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1158,11 +1164,6 @@ footer{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold{
@@ -1175,58 +1176,6 @@ footer{
 
 .leading-4{
   line-height: 1rem;
-}
-
-.tracking-wide{
-  letter-spacing: 0.025em;
-}
-
-.-tracking-widest{
-  letter-spacing: -0.1em;
-}
-
-.-tracking-tighter{
-  letter-spacing: 0.05em;
-}
-
-.-tracking-\[2rem\]{
-  letter-spacing: -2rem;
-}
-
-.-tracking-\[100rem\]{
-  letter-spacing: -100rem;
-}
-
-.-tracking-\[50\]{
-  letter-spacing: -50;
-}
-
-.-tracking-\[50rem\]{
-  letter-spacing: -50rem;
-}
-
-.-tracking-\[5\]{
-  letter-spacing: -5;
-}
-
-.-tracking-\[1rem\]{
-  letter-spacing: -1rem;
-}
-
-.-tracking-\[1\]{
-  letter-spacing: -1;
-}
-
-.-tracking-\[0\.5rem\]{
-  letter-spacing: -0.5rem;
-}
-
-.-tracking-\[-50\]{
-  letter-spacing: 50;
-}
-
-.-tracking-\[-50rem\]{
-  letter-spacing: 50rem;
 }
 
 .-tracking-\[-1rem\]{
