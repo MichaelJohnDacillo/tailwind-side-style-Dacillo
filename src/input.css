@@ -4,7 +4,16 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  body{
+    @apply font-truculenta overflow-x-hidden;
+  }
+  .container{
+    @apply max-w-7xl w-full mx-auto px-4;
+  }
+
+
+
+  /* body {
     @apply font-truculenta overflow-x-hidden;
   }
 
@@ -14,10 +23,163 @@
 
   .container {
     @apply max-w-7xl w-full px-4 mx-auto;
-  }
+  } */
 }
 @layer components {
-  .header {
+   .header{
+        @apply py-4 bg-semilight shadow-md fixed w-full z-50;
+    }
+    .header__wrapper{
+        @apply flex justify-between items-center;
+    }
+    .header__nav ul{
+        @apply flex gap-5 h-full flex-col bg-semilight
+        fixed w-full right-[-100%] top-[7.5rem] overflow-hidden text-center items-center
+        md:h-auto md:relative md:w-auto md:flex-row md:top-auto ease-in-out duration-700 md:right-auto;
+    }
+    .header__nav ul.open{
+        @apply right-0 ease-in-out duration-700;
+    }
+    .header__nav ul li {
+        @apply uppercase font-bold text-xl hover:text-primary;
+    }
+    .toggle__menu {
+        @apply flex flex-col gap-1 md:hidden;
+    }
+    .toggle__menu span{
+        @apply bg-primary inline-block w-8 content-["*"] h-1 rounded-xl;
+    }
+    .toggle__menu.open span:first-child{
+        @apply rotate-[230deg] translate-y-3  ease-in-out duration-700;
+    }
+    .toggle__menu.open span:nth-child(2){
+        @apply opacity-0  ease-in-out duration-700;
+    }
+    .toggle__menu.open span:last-child{
+        @apply rotate-[-230deg] -translate-y-1  ease-in-out duration-700;
+    }
+
+
+  .homeAbout__text p{
+    @apply mb-5;
+  }
+
+
+  .catalog h3::after{
+    @apply content-[""] bg-primary w-[1130px] h-[0.15rem] inline-block mx-2 mb-2 mt-16;
+  }
+  .catalog__card{
+    @apply shadow-2xl rounded-md;
+  }
+  .catalog__card__details{
+    @apply mx-3 mt-4;
+  }
+  .catalog__card__details h4{
+    @apply text-secondary text-3xl font-bold;
+  }
+  .catalog__card__details a{
+    @apply text-primary;
+  }
+  .catalog__card__details p{
+    @apply my-4;
+  }
+  .catalog__card__details p, a{
+    @apply text-lg;
+  }
+
+
+  /* .homeCatalog__card{
+    @apply w-[25rem] shadow-lg;
+  }
+  .homeCatalog__card img{
+    @apply w-full;
+  }
+  .homeCatalog__card__details{
+    @apply bg-white p-5;
+  }
+  .homeCatalog__card__details h4{
+    @apply text-xl text-secondary font-bold md:text-3xl;
+  }
+  .homeCatalog__card__details p{
+    @apply my-3;
+  }
+  .homeCatalog__card__details a{
+    @apply text-primary hover:text-secondary ease-in-out duration-75;
+  } */
+
+
+  .btn--semilight{
+    @apply inline-block bg-semilight shadow-md py-3 px-4 rounded-full font-bold hover:text-primary ease-in-out duration-100;
+  }
+
+  /* .footer{
+    @apply bg-black/80 text-white py-7;
+  }
+  .footer__wrapper{
+    @apply flex flex-col gap-3 items-center md:flex-row md:justify-between;
+  }
+  .footer__social{
+    @apply flex gap-2;
+  } */
+
+  footer {
+    @apply bg-black/80 py-6 text-semilight;
+  }
+  .footer__contact {
+    @apply flex flex-wrap justify-between;
+  }
+  .footer__social-list ul {
+    @apply flex flex-wrap gap-3;
+  }
+  .footer__social-list li a:hover{
+    @apply text-primary;
+  }
+
+
+  .testimonials__item{
+    @apply text-center ;
+  }
+  .testimonials__item h4{
+    @apply text-xl font-bold mb-3;
+  }
+  .testimonials__item p{
+    @apply max-w-60 mx-auto;
+  }
+
+  .tns-outer{
+    @apply overflow-hidden;
+  }
+  .tns-outer button{
+    @apply hidden;
+  }
+  .tns-nav{
+    @apply text-center;
+  }
+  .tns-nav button{
+    @apply my-8 mx-2 w-4 h-4 rounded-full border-0;
+  }
+  .tns-nav-active{
+    @apply bg-primary;
+  }
+  .tns-controls{
+    @apply hidden;
+  }
+  .tns-autoplay{
+    @apply hidden;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .header {
     @apply shadow-md py-2 bg-semilight fixed w-full z-50;
   }
   .header__wrapper {
@@ -42,14 +204,12 @@
   .catalog h3::after{
     @apply content-[""] bg-primary w-[1130px] h-[0.15rem] inline-block mx-2 mb-2;
   }
-
   .catalog__card{
     @apply shadow-2xl rounded-md;
   }
   .catalog__card__details{
     @apply mx-3 mt-4;
   }
-
   .catalog__card__details h4{
     @apply text-secondary text-3xl font-bold;
   }
@@ -63,6 +223,7 @@
     @apply text-lg;
   }
 
+
   footer {
     @apply bg-black/80 py-6 text-semilight;
   }
@@ -75,5 +236,5 @@
 
   .btn--semilight {
     @apply text-lg font-bold inline-block px-5 py-2 bg-semilight w-fit rounded-full shadow-lg mt-5 transition duration-150 ease-in-out hover:text-white hover:bg-primary hover:border-primary;
-  }
+  } */
 }

@@ -6,9 +6,295 @@
     <title>Inside Style - Home</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   </head>
   <body>
+
     <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="./home.html"><img src="../img/LOGO.png" alt="This is the Logo of Inside Style."></a>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="toggle__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+  </header>
+
+    <section class="homeBanner ">
+      <div class="homeBanner__top pt-32 pb-3 bg-secondary text-center lg:pt-36">
+        <small>INTERIOR DESIGN</small>
+        <h4 class="text-xl font-bold max-w-10 mx-auto leading-4 lg:2xl lg:max-w-12">inside style</h4>
+      </div>
+      <div class="container">
+        <div class="homeBanner__wrapper py-10 flex flex-col gap-5 md:flex-row md:gap-20">
+          <div class="homeBanner__text">
+            <h1 class="text-4xl flex flex-col lg:text-6xl">
+              <span class="text-primary font-bold">New</span>
+              <span class="text-secondary font-bold ml-10">INTERIOR</span>
+              <span class="text-primary font-thin ml-20">Collections</span> 
+            </h1>
+            <p class="my-7 md:max-w-xl lg:max-w-4xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, magnam commodi! Consectetur, assumenda quo quidem ipsum omnis corrupti, pariatur perferendis, quod numquam inventore officiis tempora libero aspernatur ipsam. Incidunt animi obcaecati rem culpa mollitia sint, facilis asperiores hic corrupti blanditiis perferendis quas aliquid dignissimos perspiciatis debitis tempora distinctio neque! Deleniti ad omnis dolore quo voluptates eius adipisci perspiciatis necessitatibus et dolor quibusdam ratione labore ipsum laudantium aperiam asperiores cumque fuga illum tenetur debitis explicabo optio, delectus nulla molestiae? Vitae ab id optio laboriosam repellat quis culpa ipsam fugit ipsa dolorum.
+            </p>
+            <a href="#" class="btn--semilight">Learn more</a>
+        </div>
+        <div class="homeBanner__img flex justify-center gap-5">
+          <img src="../img/banner-1.png" alt="This is INTERIOR design">
+          <img class="md:relative md:top-5" src="../img/banner-2.png" alt="This is INTERIOR design">
+        </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="homeAbout bg-black/80 text-white py-10">
+      <div class="container">
+        <h2 class="text-2xl font-bold text-primary mb-5 md:text-4xl md:before:content-['_'] md:before:inline-block md:before:bg-primary md:before:w-[30rem] md:before:h-1 md:relative md:right-4 md:bottom-3 md:text-right lg:before-w-[72rem]">About Inside Style</h2>
+        <div class="homeAbout__wrapper flex flex-col gap-10 md:flex-row md:items-center">
+          <img src="../img/about-2.png" alt="This is interior image">
+          <div class="homeAbout__text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolore cupiditate reprehenderit, ab ut debitis? Eos in voluptates minima, recusandae et obcaecati quas, ullam ipsam itaque quidem culpa fuga natus, dolore optio cumque harum unde consequatur id! Iusto voluptatibus odit voluptatum voluptas? Beatae aliquid, veritatis quis nostrum, nemo pariatur placeat voluptate a ullam, explicabo fugit deserunt delectus exercitationem expedita maxime.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolore cupiditate reprehenderit, ab ut debitis? Eos in voluptates minima, recusandae et obcaecati quas, ullam ipsam itaque quidem culpa fuga natus, dolore optio cumque harum unde consequatur id! Iusto voluptatibus odit voluptatum voluptas? Beatae aliquid, veritatis quis nostrum, nemo pariatur placeat voluptate a ullam, explicabo fugit deserunt delectus exercitationem expedita maxime.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias id mollitia quibusdam earum alias amet accusantium laudantium suscipit sequi itaque consequuntur numquam veniam delectus dolorem aliquid quo voluptatum, asperiores est.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias id mollitia quibusdam earum alias amet accusantium laudantium suscipit sequi itaque consequuntur numquam veniam delectus dolorem aliquid quo voluptatum, asperiores est.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h3 class="text-primary text-4xl">Catalog</h3>
+            <div class="catalog__wrapper grid grid-cols-[1fr_1fr_1fr] gap-16 mt-10">
+                <div class="catalog__card">
+                    <img src="../img/catalog-1.png" alt="catalog picture" class="w-full">
+                    <div class="catalog__card__details">
+                        <h4>Boho Theme</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati ducimus aliquam odit animi et. Consequatur!</p>
+                        <a href="#">Read more...</a>
+                    </div>
+                </div>
+                <div class="catalog__card">
+                    <img src="../img/catalog-2.png" alt="catalog picture" class="w-full">
+                    <div class="catalog__card__details">
+                        <h4>Minimalist Theme</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati ducimus aliquam odit animi et. Consequatur!</p>
+                        <a href="#">Read more...</a>
+                    </div>
+                </div>
+                <div class="catalog__card">
+                    <img src="../img/catalog-3.png" alt="catalog picture" class="w-full">
+                    <div class="catalog__card__details">
+                        <h4>Traditional Theme</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati ducimus aliquam odit animi et. Consequatur!</p>
+                        <a href="#">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="homeCatalog bg-semilight py-10">
+      <div class="container">
+        <h2 class="text-2xl font-bold text-primary mb-5 md:text-4xl">Catalog</h2>
+        <div class="homeCatalog__wrapper flex flex-wrap gap-5 justify-center md:gap-10">
+          <div class="homeCatalog__card">
+            <div class="homeCatalog__card__details">
+              <img src="../img/catalog-1.png" alt="This is boho theme image">
+              <h4>Boho Theme</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quae itaque omnis ex expedita consectetur fuga.</p>
+              <a href="#">Read more...</a>
+            </div>
+            <div class="homeCatalog__card__details">
+              <img src="../img/catalog-2.png" alt="This is boho theme image">
+              <h4>Boho Theme</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quae itaque omnis ex expedita consectetur fuga.</p>
+              <a href="#">Read more...</a>
+            </div>
+            <div class="homeCatalog__card__details">
+              <img src="../img/catalog-3.png" alt="This is boho theme image">
+              <h4>Boho Theme</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quae itaque omnis ex expedita consectetur fuga.</p>
+              <a href="#">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section class="testimonials py-10">
+      <div class="container">
+        <h2 class="text-2xl font-bold text-primary text-center mb-5">CLIENTS REVIEW</h2>
+        <div class="testimonials__wrapper flex">
+          <div class="testimonials__slider">
+            <div class="testimonials__item">
+              <h4>Wako Wako</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, soluta nulla culpa repudiandae incidunt sequi error explicabo corrupti nihil quas?</p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Starry Knight</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, soluta nulla culpa repudiandae incidunt sequi error explicabo corrupti nihil quas?</p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Luban Fortetre</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, soluta nulla culpa repudiandae incidunt sequi error explicabo corrupti nihil quas?</p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Wahafen Fella</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, soluta nulla culpa repudiandae incidunt sequi error explicabo corrupti nihil quas?</p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Michael John</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, soluta nulla culpa repudiandae incidunt sequi error explicabo corrupti nihil quas?</p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Michael John</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, soluta nulla culpa repudiandae incidunt sequi error explicabo corrupti nihil quas?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="cta bg-primary flex flex-col justify-center text-center py-10">
+      <div class="container">
+        <h3 class="text-3xl font-bold md:text-3xl">Feel free to talk about your desired style</h3>
+        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, perspiciatis.</p>
+        <a href="#" class="btn--semilight">Learn More</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__contact">
+            <div class="footer__social-list">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__company-address">
+              <p>Baloc Road, brgy san Ignacio San Pablo city, Laguna 4000</p>
+            </div>
+            <div class="footer__trademark">
+              <p>&copy;INSIDESTYLE2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="footer__social">
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </li>
+              <p>Baloc Road, brgy san Ignacio San Pablo city, Laguna 4000</p>
+              <p>&copy;INSIDESTYLE2023</p>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/toggleMenu.js"></script>
+    <script src="./js/slider.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <img src="../img/LOGO.png" alt="Logo of Inside Style" />
@@ -23,9 +309,9 @@
           </nav>
         </div>
       </div>
-    </header>
+    </header> -->
 
-    <!-- 16 25 34 43 52 6base -->
+    <!-- 16 25 34 43 52 6base
 
     <section class="home pt-[6.5rem]">
       <div class="home__title py-7 bg-secondary text-center">
@@ -74,8 +360,6 @@
         </div>
       </div>
     </section>
-
-    <!-- 16 25 34 43 52 6base -->
 
     <section class="about bg-black/80">
         <div class="container">
@@ -179,6 +463,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
   </body>
 </html>
