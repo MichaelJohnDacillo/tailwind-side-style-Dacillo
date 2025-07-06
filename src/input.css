@@ -174,6 +174,30 @@
   }
 
 
+ 
+  .latestStyle__wrapper{
+    @apply md:grid md:grid-cols-[1fr_1fr] md:gap-6 md:my-6 lg:grid-cols-[1fr_1fr_1fr];
+  }
+  .latestStyle__card{
+    @apply justify-center;
+  }
+  .latestStyle__card{
+    @apply mx-3 my-6 md:my-2 bg-white;
+  }
+  .latestStyle__card img{
+    @apply w-full;
+  }
+  .latestStyle__card__discription{
+    @apply mx-2 py-3;
+  }
+  .latestStyle__card__discription h4{
+    @apply text-secondary font-bold text-2xl lg:text-[1.6rem];
+  }
+  .latestStyle__card__discription p{
+    @apply my-2;
+  }
+
+
 
 
 
